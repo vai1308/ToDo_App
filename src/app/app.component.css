@@ -1,0 +1,12 @@
+mat-toolbar{
+    background-color: rgb(49, 48, 48);
+    color: white;
+    margin-bottom: 10px;
+}
+mat-icon{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}

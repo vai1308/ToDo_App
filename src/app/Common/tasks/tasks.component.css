@@ -1,0 +1,17 @@
+mat-expansion-panel{
+    background-color: rgb(70, 68, 68);
+    margin: 10px;
+}
+
+mat-icon{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

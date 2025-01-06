@@ -1,0 +1,14 @@
+<app-add-task (taskAdd)="addTask($event)"></app-add-task>
+<div *ngIf="this.todos.length===0; else elseblock"><strong>Your ToDo List is Empty</strong></div>
+<ng-template #elseblock>
+<div *ngFor="let todo of todos; index as i" class="mid"><mat-accordion class="wider-accordion">
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title>Task {{ i+1 }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <h4>{{ todo.title }}</h4>
+    <p>{{ todo.desc }}</p>
+    <mat-icon (click)="delete(todo)">delete</mat-icon>
+  </mat-expansion-panel>
+</mat-accordion></div>
+</ng-template>

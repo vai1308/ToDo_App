@@ -1,0 +1,31 @@
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #807272;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+input{
+    height: 20px;
+}
