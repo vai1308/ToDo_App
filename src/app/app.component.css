@@ -1,12 +1,62 @@
-mat-toolbar{
+mat-toolbar {
     background-color: rgb(49, 48, 48);
     color: white;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
-mat-icon{
+
+mat-icon {
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.example-icon {
+    margin-right: 20px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-menu {
+    background-color: #6200ea;
+    color: white;
+}
+
+mat-menu button:hover {
+    background-color: rgb(49, 48, 48);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
 }

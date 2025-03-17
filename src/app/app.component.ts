@@ -7,10 +7,10 @@ import {MatMenuModule} from '@angular/material/menu';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink, MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule],
+  imports: [RouterOutlet, RouterLink, MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ToDo App by Vaibhav';
+  title = 'Modern ToDo App by Vaibhav';
 }

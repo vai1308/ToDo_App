@@ -1,17 +1,40 @@
-mat-expansion-panel{
+mat-expansion-panel {
     background-color: rgb(70, 68, 68);
     margin: 10px;
+    color: white;
 }
 
-mat-icon{
+mat-icon {
     cursor: pointer;
     margin-right: 20px;
+    color: white;
 }
 
-div{
+div.mid {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+mat-panel-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+mat-icon:hover {
+    color: #3700b3;
 }

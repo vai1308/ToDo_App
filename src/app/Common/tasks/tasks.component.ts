@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy ,Component, Input, Output, signal } from '@angular/core';
+import { ChangeDetectionStrategy ,Component, EventEmitter, Output, signal } from '@angular/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { AddTaskComponent } from "../add-task/add-task.component";
@@ -18,8 +18,8 @@ export interface Todo{
 })
 
 export class TasksComponent{
+  @Output() taskAdd:EventEmitter<Todo> = new EventEmitter();
   todos:Todo[] = [];
-  @Input() favoriteItem:Todo[] = [];
   constructor(){
     const todos = localStorage.getItem('todos');
     if(todos){
@@ -35,9 +35,5 @@ export class TasksComponent{
   addTask(todo: Todo){
     this.todos.push(todo);
     localStorage.setItem('todos', JSON.stringify(this.todos));
-  }
-  favorite(item: Todo){
-    this.favoriteItem.push(item);
-    localStorage.setItem('todos', JSON.stringify(this.favoriteItem));
   }
 }
